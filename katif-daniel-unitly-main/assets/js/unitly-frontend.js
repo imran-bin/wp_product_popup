@@ -77,6 +77,25 @@
 })(jQuery);
 
 jQuery(document).ready(function($) {
+  var previousQuantity = 1; // Default quantity
+  var previousSubtotal = 0; // Default subtotal
+
+  // Function to update subtotal when quantity changes
+  function updateSubtotal() {
+      var quantity = parseInt($('#quantity').val());
+      var price = parseFloat($('#product-price').data('price'));
+      var subtotal = quantity * price;
+      $('#subtotal').text('Subtotal: $' + subtotal.toFixed(2));
+
+      // Update previous subtotal
+      previousSubtotal = subtotal;
+  }
+
+  // Update subtotal when quantity changes
+  $(document).on('input', '#quantity', function() {
+      updateSubtotal();
+  });
+
   // Function to show popup with product details
   function showPopup(productName, productPrice, productWeight, productId) {
       // Clear previous popup content
@@ -85,11 +104,12 @@ jQuery(document).ready(function($) {
       // Create new popup HTML with the product data
       var popupHtml = '<div id="popup" style="display: none;">' +
                           '<h2>' + productName + '</h2>' +
-                          '<p>Price: $' + productPrice + '</p>' +
+                          '<p id="product-price" data-price="' + productPrice + '">Price: $' + productPrice + '</p>' +
                           '<p>Weight: ' + productWeight + '</p>' +
                           '<div class="product-options">' +
                               '<label for="quantity">Quantity:</label>' +
-                              '<input type="number" id="quantity" name="quantity" value="1" min="1">' +
+                              '<input type="number" id="quantity" name="quantity" value="' + previousQuantity + '" min="1">' +
+                              '<p id="subtotal">Subtotal: $' + previousSubtotal.toFixed(2) + '</p>' +
                           '</div>' +
                           '<button class="add-to-cart" data-post-id="' + productId + '">Add to Cart</button>' +
                           '<button class="close-popup">Close</button>' +
@@ -135,8 +155,13 @@ jQuery(document).ready(function($) {
   // Add to Cart functionality
   $('body').on('click', '.add-to-cart', function() {
       var productId = $(this).data('post-id');
-      var quantity = $('#quantity').val(); // Get the quantity from the input field
+      var quantity = $('#quantity').val();
+      var subtotal = parseFloat($('#subtotal').text().replace('Subtotal: $', ''));
       
+      // Update previous quantity and subtotal
+      previousQuantity = quantity;
+      previousSubtotal = subtotal;
+
       // AJAX request to add product to cart
       $.ajax({
           url: my_ajax_object.ajax_url,
@@ -144,7 +169,8 @@ jQuery(document).ready(function($) {
           data: {
               action: 'add_to_cart',
               product_id: productId,
-              quantity: quantity, // Include quantity in the data
+              quantity: quantity,
+              subtotal: subtotal, // Include subtotal in the data
               security: my_ajax_object.ajax_nonce
           },
           success: function(response) {
@@ -166,5 +192,16 @@ jQuery(document).ready(function($) {
       // After loading the products, ensure that they have the appropriate attributes and classes
       // For example, if they have data-post-id attributes, ensure that the above click event listener can handle them
   });
-});
 
+  // When cart accordion is opened, set quantity to 3 and subtotal to 140
+  $('#cart-accordion').on('shown.bs.collapse', function () {
+      // Set quantity to 3
+      $('#quantity').val(3);
+      // Calculate subtotal
+      var price = parseFloat($('#product-price').data('price'));
+      var subtotal = 3 * price;
+      $('#subtotal').text('Subtotal: $' + subtotal.toFixed(2));
+      // Update previous subtotal
+      previousSubtotal = subtotal;
+  });
+});
