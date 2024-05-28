@@ -125,7 +125,6 @@ jQuery(document).ready(function($) {
   // Close the pop-up when the close button is clicked
   $('body').on('click', '.close-popup', function() {
       $('#popup').removeClass('active').hide();
-      // location.reload();
   });
 
   // Add to Cart functionality
@@ -142,8 +141,10 @@ jQuery(document).ready(function($) {
               security: my_ajax_object.ajax_nonce
           },
           success: function(response) {
-              // Update cart count in UI
-              $('.elementor-menu-cart__items-count').text(response.data.cart_count);
+              // Update data-counter attribute
+              var currentCount = parseInt($('[data-counter]').attr('data-counter'));
+              $('[data-counter]').attr('data-counter', currentCount + 1);
+              $('[data-counter]').text(currentCount + 1); // Update text content to reflect the new value
           },
           error: function(xhr, status, error) {
               // Handle errors
@@ -151,5 +152,6 @@ jQuery(document).ready(function($) {
           }
       });
   });
-});;
+});
+
 
