@@ -78,7 +78,7 @@
 
 jQuery(document).ready(function($) {
   // Function to show popup with product details
-  function showPopup(productName, productPrice, productId) {
+  function showPopup(productName, productPrice, productWeight, productId) {
       // Clear previous popup content
       $('#popup').remove();
 
@@ -86,6 +86,11 @@ jQuery(document).ready(function($) {
       var popupHtml = '<div id="popup" style="display: none;">' +
                           '<h2>' + productName + '</h2>' +
                           '<p>Price: $' + productPrice + '</p>' +
+                          '<p>Weight: ' + productWeight + '</p>' +
+                          '<div class="product-options">' +
+                              '<label for="quantity">Quantity:</label>' +
+                              '<input type="number" id="quantity" name="quantity" value="1" min="1">' +
+                          '</div>' +
                           '<button class="add-to-cart" data-post-id="' + productId + '">Add to Cart</button>' +
                           '<button class="close-popup">Close</button>' +
                       '</div>';
@@ -113,7 +118,7 @@ jQuery(document).ready(function($) {
           },
           success: function(response) {
               // Call function to show popup with product details
-              showPopup(response.data.name, response.data.price, response.data.id);
+              showPopup(response.data.name, response.data.price, response.data.weight, response.data.id);
           },
           error: function(xhr, status, error) {
               // Handle errors
@@ -130,6 +135,7 @@ jQuery(document).ready(function($) {
   // Add to Cart functionality
   $('body').on('click', '.add-to-cart', function() {
       var productId = $(this).data('post-id');
+      var quantity = $('#quantity').val(); // Get the quantity from the input field
       
       // AJAX request to add product to cart
       $.ajax({
@@ -138,6 +144,7 @@ jQuery(document).ready(function($) {
           data: {
               action: 'add_to_cart',
               product_id: productId,
+              quantity: quantity, // Include quantity in the data
               security: my_ajax_object.ajax_nonce
           },
           success: function(response) {
