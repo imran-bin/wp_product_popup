@@ -75,3 +75,32 @@
   //     send_ajax_data();
   // });
 })(jQuery);
+
+
+
+jQuery(document).ready(function($) {
+  // Listen for clicks on elements with data-post-id attribute
+  $('[data-post-id]').click(function(e) {
+      e.preventDefault(); // Prevent default action
+
+      var postId = $(this).data('post-id');
+      
+      // Dynamically inject the popup HTML with the post ID
+      var popupHtml = '<div id="popup" style="display: none;">' +
+                          '<p>This is the popup content for post ID: ' + postId + '</p>' +
+                          '<button id="close">Close</button>' +
+                      '</div>';
+      $('body').append(popupHtml);
+
+      // Show the pop-up
+      $('#popup').addClass('active').show();
+
+      // You can now perform actions specific to the clicked post ID if needed
+      // For example, fetch post details via AJAX and display them in the pop-up
+  });
+
+  // Close the pop-up when the close button is clicked
+  $('body').on('click', '#close', function() {
+      $('#popup').removeClass('active').hide();
+  });
+});

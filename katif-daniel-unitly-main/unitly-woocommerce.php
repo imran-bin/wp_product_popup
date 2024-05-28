@@ -1,6 +1,6 @@
 <?php 
 /**
- * Plugin Name: Unitly WooCommerce
+ * Plugin Name: Unitly WooCommerce katif denial
  * Description: An WooCommerce addon plugin that helps you sell products based on per unit price such as per sqft, per gm, per kg, per cm etc.
  * Plugin URI: https://
  * Author: Mak Alamin
