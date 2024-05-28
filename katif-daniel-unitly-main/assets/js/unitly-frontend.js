@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
   }
 
   // Listen for clicks on elements with data-product-id attribute
-  $('[data-post-id]').click(function(e) {
+  $(document).on('click', '[data-post-id]', function(e) {
       e.preventDefault(); // Prevent default action
 
       var productId = $(this).data('post-id');
@@ -152,6 +152,12 @@ jQuery(document).ready(function($) {
           }
       });
   });
-});
 
+  // Functionality for the "Shop More" button
+  $('#shopmore').click(function() {
+      // Your code to load more products
+      // After loading the products, ensure that they have the appropriate attributes and classes
+      // For example, if they have data-post-id attributes, ensure that the above click event listener can handle them
+  });
+});
 
