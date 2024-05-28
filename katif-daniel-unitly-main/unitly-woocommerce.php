@@ -54,7 +54,9 @@ final class Unitly_WooCommerce
         $this->define_constants();
         
         add_action( 'plugins_loaded', [ $this, 'init_plugin_classes' ] );
+        
     }
+       
 
     /**
     * Initializes a singleton instance of this class
@@ -106,6 +108,52 @@ function kickoff_unitly_woocommerce()
 {
     return Unitly_WooCommerce::init();
 }
+
+// AJAX handler for fetching product details
+function get_product_details() {
+     
+    check_ajax_referer('ajax-nonce', 'security');
+    
+    $post_id = $_POST['post_id'];
+    
+    // Fetch product details based on $post_id
+    // Example: $product = get_product_by_id($post_id);
+    
+    // For demonstration, let's assume $product is an array with product details
+    $product = array(
+        'name' => 'Sample Product',
+        'price' => '10.00',
+        'id' => $post_id // You can replace this with the actual product ID
+    );
+    
+    // Return product details as JSON
+    wp_send_json($product);
+}
+
+
+// AJAX handler for adding product to cart
+function add_to_cart() {
+    check_ajax_referer('ajax-nonce', 'security');
+    
+    $product_id = $_POST['product_id'];
+    
+    // Add product to cart based on $product_id
+    // Example: $cart->add_product($product_id);
+    
+    // For demonstration, let's assume product is added successfully
+    $response = array(
+        'status' => 'success',
+        'message' => 'Product added to cart successfully'
+    );
+    
+    // Return response as JSON
+    wp_send_json($response);
+}
+
+add_action('wp_ajax_nopriv_get_product_details',  'get_product_details');  
+add_action('wp_ajax_add_to_cart', 'add_to_cart');
+add_action('wp_ajax_nopriv_add_to_cart', 'add_to_cart'); 
+add_action('wp_ajax_get_product_details', 'get_product_details');
 
 /**
  * Kick-off the plugin

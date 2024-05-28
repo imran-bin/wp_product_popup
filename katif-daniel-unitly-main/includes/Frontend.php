@@ -23,6 +23,10 @@ class Frontend
         wp_enqueue_style('unitly_woo_css', UnitlyWoo_ASSETS . '/css/unitly-frontend.css', array(), null, 'all');
 
         wp_enqueue_script( 'unitly_woo_js', UnitlyWoo_ASSETS . '/js/unitly-frontend.js', array('jquery'), null, true );
+        wp_localize_script('unitly_woo_js', 'my_ajax_object', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'ajax_nonce' => wp_create_nonce('ajax-nonce')
+        ));
 
     //    if (is_product()) {
     //     $painting_cost = get_post_meta(get_the_ID(), 'painting_cost', true);

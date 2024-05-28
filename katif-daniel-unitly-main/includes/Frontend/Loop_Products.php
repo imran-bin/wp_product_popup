@@ -13,6 +13,8 @@ namespace UnitlyWoo\Frontend;
         add_filter( 'woocommerce_get_price_html', [$this, 'change_product_price_display'], 100, 2 );
         
          add_filter('woocommerce_loop_add_to_cart_link',  [ $this,'change_loop_add_to_cart_link'], 10, 2 );
+       
+        
      }
 
      /**
@@ -46,7 +48,11 @@ namespace UnitlyWoo\Frontend;
 
 
 
+ 
 
-    
+
+
+
+
  }
  
