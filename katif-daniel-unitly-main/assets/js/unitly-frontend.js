@@ -76,9 +76,26 @@
   // });
 })(jQuery);
 
-
-
 jQuery(document).ready(function($) {
+  // Function to show popup with product details
+  function showPopup(productName, productPrice, productId) {
+      // Clear previous popup content
+      $('#popup').remove();
+
+      // Create new popup HTML with the product data
+      var popupHtml = '<div id="popup" style="display: none;">' +
+                          '<h2>' + productName + '</h2>' +
+                          '<p>Price: $' + productPrice + '</p>' +
+                          '<button class="add-to-cart" data-post-id="' + productId + '">Add to Cart</button>' +
+                          '<button class="close-popup">Close</button>' +
+                      '</div>';
+      // Append the new popup HTML to the body
+      $('body').append(popupHtml);
+
+      // Show the pop-up
+      $('#popup').addClass('active').show();
+  }
+
   // Listen for clicks on elements with data-product-id attribute
   $('[data-post-id]').click(function(e) {
       e.preventDefault(); // Prevent default action
@@ -95,18 +112,8 @@ jQuery(document).ready(function($) {
               security: my_ajax_object.ajax_nonce
           },
           success: function(response) {
-            console.log(response)
-              // Dynamically inject the popup HTML with the product data
-              var popupHtml = '<div id="popup" style="display: none;">' +
-                                  '<h2>' + response.name + '</h2>' +
-                                  '<p>Price: $' + response.price + '</p>' +
-                                  '<button class="add-to-cart" data-post-id="' + response.id + '">Add to Cart</button>' +
-                                  '<button id="close">Close</button>' +
-                              '</div>';
-              $('body').append(popupHtml);
-
-              // Show the pop-up
-              $('#popup').addClass('active').show();
+              // Call function to show popup with product details
+              showPopup(response.data.name, response.data.price, response.data.id);
           },
           error: function(xhr, status, error) {
               // Handle errors
@@ -116,8 +123,9 @@ jQuery(document).ready(function($) {
   });
 
   // Close the pop-up when the close button is clicked
-  $('body').on('click', '#close', function() {
+  $('body').on('click', '.close-popup', function() {
       $('#popup').removeClass('active').hide();
+      // location.reload();
   });
 
   // Add to Cart functionality
@@ -134,8 +142,8 @@ jQuery(document).ready(function($) {
               security: my_ajax_object.ajax_nonce
           },
           success: function(response) {
-              // Handle success response
-              console.log(response);
+              // Update cart count in UI
+              $('.elementor-menu-cart__items-count').text(response.data.cart_count);
           },
           error: function(xhr, status, error) {
               // Handle errors
@@ -143,5 +151,5 @@ jQuery(document).ready(function($) {
           }
       });
   });
-});
+});;
 

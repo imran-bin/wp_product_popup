@@ -112,22 +112,21 @@ function kickoff_unitly_woocommerce()
 // AJAX handler for fetching product details
 // AJAX handler for fetching product details
  
-
- // AJAX handler for fetching product details by product ID
+ 
 function get_product_details() {
     check_ajax_referer('ajax-nonce', 'security');
     
-    $product_id = $_POST['product_id'];
+    $product_id = isset($_POST['product_id']) ? $_POST['product_id'] : '';
     
     // Fetch product details based on $product_id
     $product = wc_get_product($product_id);
     
     if ($product) {
         // Return product details as JSON
-        wp_send_json(array(
+        wp_send_json_success(array(
             'name' => $product->get_name(),
             'price' => $product->get_price(),
-            'id' => $product_id
+            'id' => $product_id,
         ));
     } else {
         // Product not found
@@ -135,38 +134,44 @@ function get_product_details() {
     }
 }
 add_action('wp_ajax_get_product_details', 'get_product_details');
-add_action('wp_ajax_nopriv_get_product_details', 'get_product_details'); // For non-logged-in users
+add_action('wp_ajax_nopriv_get_product_details', 'get_product_details'); 
 
-// AJAX handler for adding product to cart
-// AJAX handler for adding product to cart
 function add_to_cart() {
     check_ajax_referer('ajax-nonce', 'security');
     
-    $product_id = $_POST['product_id'];
+    $product_id = isset($_POST['product_id']) ? $_POST['product_id'] : '';
     
     // Add product to cart based on $product_id
     $result = WC()->cart->add_to_cart($product_id);
     
     if ($result) {
-        // Product added to cart successfully
-        $response = array(
-            'status' => 'success',
-            'message' => 'Product added to cart successfully'
-        );
+        // Get cart count
+        $cart_count = WC()->cart->get_cart_contents_count();
+        
+        // Return response with cart count
+        wp_send_json_success(array(
+            'cart_count' => $cart_count
+        ));
     } else {
         // Error adding product to cart
-        $response = array(
-            'status' => 'error',
-            'message' => 'Failed to add product to cart'
-        );
+        wp_send_json_error('Failed to add product to cart');
     }
-    
-    // Return response as JSON
-    wp_send_json($response);
 }
 add_action('wp_ajax_add_to_cart', 'add_to_cart');
 add_action('wp_ajax_nopriv_add_to_cart', 'add_to_cart'); // For non-logged-in users
 
+function get_cart_count() {
+    // Perform necessary operations to get the cart count
+    $cart_count = WC()->cart->get_cart_contents_count(); // Assuming WooCommerce is used
+
+    // Return the cart count as JSON
+    wp_send_json_success(array('cart_count' => $cart_count));
+    
+    // Always exit to avoid further execution
+    wp_die();
+}
+add_action('wp_ajax_get_cart_count', 'get_cart_count');
+add_action('wp_ajax_nopriv_get_cart_count', 'get_cart_count'); // For non-logged-in users
 
 
 /**
