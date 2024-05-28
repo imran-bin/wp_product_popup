@@ -79,70 +79,69 @@
 
 
 jQuery(document).ready(function($) {
-    // Listen for clicks on elements with data-post-id attribute
-    $('[data-post-id]').click(function(e) {
-        e.preventDefault(); // Prevent default action
+  // Listen for clicks on elements with data-product-id attribute
+  $('[data-post-id]').click(function(e) {
+      e.preventDefault(); // Prevent default action
 
-        var postId = $(this).data('post-id');
-         
-        
-        // AJAX request to fetch product details
-        $.ajax({
-            url: my_ajax_object.ajax_url,
-            type: 'post',
-            data: {
-                action: 'get_product_details',
-                post_id: postId,
-                security: my_ajax_object.ajax_nonce
-            },
-            success: function(response) {
-                // Dynamically inject the popup HTML with the product data
-                
-                var popupHtml = '<div id="popup" style="display: none;">' +
-                                    '<h2>' + response.name + '</h2>' +
-                                    '<p>Price: $' + response.price + '</p>' +
-                                    '<button class="add-to-cart" data-product-id="' + response.id + '">Add to Cart</button>' +
-                                    '<button id="close">Close</button>' +
-                                '</div>';
-                $('body').append(popupHtml);
+      var productId = $(this).data('post-id');
+      
+      // AJAX request to fetch product details
+      $.ajax({
+          url: my_ajax_object.ajax_url,
+          type: 'post',
+          data: {
+              action: 'get_product_details',
+              product_id: productId,
+              security: my_ajax_object.ajax_nonce
+          },
+          success: function(response) {
+            console.log(response)
+              // Dynamically inject the popup HTML with the product data
+              var popupHtml = '<div id="popup" style="display: none;">' +
+                                  '<h2>' + response.name + '</h2>' +
+                                  '<p>Price: $' + response.price + '</p>' +
+                                  '<button class="add-to-cart" data-post-id="' + response.id + '">Add to Cart</button>' +
+                                  '<button id="close">Close</button>' +
+                              '</div>';
+              $('body').append(popupHtml);
 
-                // Show the pop-up
-                $('#popup').addClass('active').show();
-            },
-            error: function(xhr, status, error) {
-                // Handle errors
-                console.error(xhr.responseText);
-            }
-        });
-    });
+              // Show the pop-up
+              $('#popup').addClass('active').show();
+          },
+          error: function(xhr, status, error) {
+              // Handle errors
+              console.error(xhr.responseText);
+          }
+      });
+  });
 
-    // Close the pop-up when the close button is clicked
-    $('body').on('click', '#close', function() {
-        $('#popup').removeClass('active').hide();
-    });
+  // Close the pop-up when the close button is clicked
+  $('body').on('click', '#close', function() {
+      $('#popup').removeClass('active').hide();
+  });
 
-    // Add to Cart functionality
-    $('body').on('click', '.add-to-cart', function() {
-        var productId = $(this).data('product-id');
-        
-        // AJAX request to add product to cart
-        $.ajax({
-            url: my_ajax_object.ajax_url,
-            type: 'post',
-            data: {
-                action: 'add_to_cart',
-                product_id: productId,
-                security: my_ajax_object.ajax_nonce
-            },
-            success: function(response) {
-                // Handle success response
-                console.log(response);
-            },
-            error: function(xhr, status, error) {
-                // Handle errors
-                console.error(xhr.responseText);
-            }
-        });
-    });
+  // Add to Cart functionality
+  $('body').on('click', '.add-to-cart', function() {
+      var productId = $(this).data('post-id');
+      
+      // AJAX request to add product to cart
+      $.ajax({
+          url: my_ajax_object.ajax_url,
+          type: 'post',
+          data: {
+              action: 'add_to_cart',
+              product_id: productId,
+              security: my_ajax_object.ajax_nonce
+          },
+          success: function(response) {
+              // Handle success response
+              console.log(response);
+          },
+          error: function(xhr, status, error) {
+              // Handle errors
+              console.error(xhr.responseText);
+          }
+      });
+  });
 });
 
