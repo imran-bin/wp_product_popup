@@ -1,0 +1,325 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quantity Buttons for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 08:07+0000\n"
+"PO-Revision-Date: 2023-03-16 09:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: Czech\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: FME_QIFW"
+
+#: admin/view/templates/fme-qifw-update-page.php:81
+msgid "A Readonly input field cannot be modified"
+msgstr "Vstupní pole Pouze pro čtení nelze upravit"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:49
+msgid "Action"
+msgstr "Akce"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:208
+msgid "Add New Rule"
+msgstr "Přidat nové pravidlo"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Add new rule"
+msgstr "Přidat nové pravidlo"
+
+#: admin/view/templates/fme-qifw-view-page.php:67
+#: admin/view/templates/fme-qifw-update-page.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:289
+msgid "All Products:"
+msgstr "Všechny produkty:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:38
+msgid "Button Color:"
+msgstr "Barva tlačítka:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:47
+msgid "Button Font Color:"
+msgstr "Barva písma tlačítka:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:57
+msgid "Button Font Size:"
+msgstr "Velikost písma tlačítka:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:30
+msgid "Button Label:"
+msgstr "Štítek tlačítka:"
+
+#: admin/view/templates/fme-qifw-view-page.php:69
+#: admin/view/templates/fme-qifw-update-page.php:102
+#: admin/view/templates/fme-qifw-manage-rule.php:291
+msgid "Categories"
+msgstr "Kategorie"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:192
+#: admin/view/templates/fme-qifw-manage-rule.php:406
+msgid "Close"
+msgstr "Zavřít"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:158
+msgid "Delete"
+msgstr "Vymazat"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Delete Rule  Successfully.."
+msgstr "Úspěšné smazání pravidla..."
+
+#: admin/view/templates/fme-qifw-view-page.php:32
+#: admin/view/templates/fme-qifw-update-page.php:32
+#: admin/view/templates/fme-qifw-manage-rule.php:231
+msgid "Disable "
+msgstr "Zakázat"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:42
+msgid "Display On"
+msgstr "Displej zapnutý"
+
+#. Description of the plugin
+msgid ""
+"Display quantity increment buttons on shop, product, and cart page and set "
+"minimum / maximum order limits."
+msgstr ""
+"Zobrazte tlačítka pro zvýšení množství na stránce obchodu, produktu a košíku "
+"a nastavte minimální / maximální limity objednávky."
+
+#: admin/view/templates/fme-qifw-manage-rule.php:157
+msgid "Edit"
+msgstr "Upravit"
+
+#: admin/view/templates/fme-qifw-view-page.php:31
+#: admin/view/templates/fme-qifw-update-page.php:31
+#: admin/view/templates/fme-qifw-manage-rule.php:230
+msgid "Enable"
+msgstr "Umožnit"
+
+#: admin/view/templates/fme-qifw-view-page.php:27
+#: admin/view/templates/fme-qifw-update-page.php:26
+#: admin/view/templates/fme-qifw-manage-rule.php:226
+msgid "Enable / Disable Rule:"
+msgstr "Povolit/zakázat pravidlo:"
+
+#: admin/view/templates/fme-qifw-update-page.php:27
+msgid "Enable / Disable Rules."
+msgstr "Povolit / zakázat pravidla."
+
+#. Author of the plugin
+msgid "FME Addons"
+msgstr "FME doplňky"
+
+#: admin/fme-quanity-increment-admin.php:209
+#: admin/fme-quanity-increment-admin.php:210
+msgid "fme_quantity_increment"
+msgstr "fme_quantity_increment"
+
+#: admin/view/templates/fme-qifw-general-setting.php:24
+msgid "General rule"
+msgstr "Obecné pravidlo"
+
+#: admin/view/fme-qifw-settings-page.php:8
+msgid "General Settings"
+msgstr "Obecné nastavení"
+
+#: admin/view/fme-qifw-settings-page.php:9
+msgid "Manage Rule"
+msgstr "Spravovat pravidlo"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Manage rules"
+msgstr "Spravovat pravidla"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:45
+msgid "Maximum Quantity"
+msgstr "Maximální množství"
+
+#: admin/view/templates/fme-qifw-view-page.php:47
+#: admin/view/templates/fme-qifw-update-page.php:55
+#: admin/view/templates/fme-qifw-manage-rule.php:251
+msgid "Maximum Quantity:"
+msgstr "Maximální množství:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:44
+msgid "Minimum Quantity"
+msgstr "Minimální kvantita"
+
+#: admin/view/templates/fme-qifw-view-page.php:39
+#: admin/view/templates/fme-qifw-update-page.php:41
+#: admin/view/templates/fme-qifw-manage-rule.php:240
+msgid "Minimum Quantity:"
+msgstr "Minimální kvantita:"
+
+#: admin/view/templates/fme-qifw-update-page.php:91
+msgid "Product / Category Restriction"
+msgstr "Omezení produktu / kategorie"
+
+#: admin/view/templates/fme-qifw-view-page.php:63
+#: admin/view/templates/fme-qifw-manage-rule.php:285
+msgid "Product / Category Restriction:"
+msgstr "Omezení produktu / kategorie:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:43
+msgid "Product/Category"
+msgstr "Kategorie produktů"
+
+#: admin/view/templates/fme-qifw-view-page.php:68
+#: admin/view/templates/fme-qifw-update-page.php:101
+#: admin/view/templates/fme-qifw-manage-rule.php:290
+msgid "Products"
+msgstr "produkty"
+
+#. Name of the plugin
+msgid "Quantity Buttons for WooCommerce"
+msgstr "Tlačítka množství pro WooCommerce"
+
+#: front/fme-quanity-increment-front.php:322
+#: front/fme-quantity-plus-minus.php:112 front/fme-quantity-plus-minus.php:188
+#: front/fme-quantity-plus-minus.php:263
+msgid "Quantity can not add more than maximum value!"
+msgstr "Množství nemůže přidat více než maximální hodnotu!"
+
+#: front/fme-quanity-increment-front.php:337
+#: front/fme-quantity-plus-minus.php:125 front/fme-quantity-plus-minus.php:201
+#: front/fme-quantity-plus-minus.php:276
+msgid "Quantity can not Less than minimum value!"
+msgstr "Množství nemůže být nižší než minimální hodnota!"
+
+#: admin/view/templates/fme-qifw-general-setting.php:66
+msgid "Quantity Field Width:"
+msgstr "Množství Šířka pole:"
+
+#: admin/fme-quanity-increment-admin.php:196
+msgid "Quantity Increment"
+msgstr "Přírůstek množství"
+
+#: admin/view/templates/fme-qifw-update-page.php:94
+msgid ""
+"Quantity Increment can optionally visible/hidden only if the selected "
+"products are in cart/order."
+msgstr ""
+"Přírůstek množství lze volitelně zobrazit/skrýt pouze v případě, že jsou "
+"vybrané produkty v košíku/objednávce."
+
+#: admin/view/templates/fme-qifw-general-setting.php:84
+msgid "Quantity Maximum Limit Error Message:"
+msgstr "Chybová zpráva maximálního limitu množství:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:75
+msgid "Quantity Minimum Limit Error Message:"
+msgstr "Chybová zpráva minimálního limitu množství:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:47
+msgid "Readonly"
+msgstr "Pouze ke čtení"
+
+#: admin/view/templates/fme-qifw-update-page.php:80
+#: admin/view/templates/fme-qifw-manage-rule.php:274
+msgid "Readonly:"
+msgstr "Pouze ke čtení:"
+
+#: admin/view/templates/fme-qifw-view-page.php:19
+#: admin/view/templates/fme-qifw-update-page.php:15
+#: admin/view/templates/fme-qifw-manage-rule.php:215
+msgid "Rule Priority:"
+msgstr "Priorita pravidla:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:39
+msgid "Rules"
+msgstr "Pravidla"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:41
+msgid "Rules Priority"
+msgstr "Priorita pravidel"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:40
+msgid "Rules Status"
+msgstr "Stav pravidel"
+
+#: admin/view/templates/fme-qifw-view-page.php:169
+#: admin/view/templates/fme-qifw-general-setting.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:393
+msgid "Save Settings"
+msgstr "Uložit nastavení"
+
+#: admin/view/templates/fme-qifw-update-page.php:161
+msgid "Select category"
+msgstr "Vyberte kategorii"
+
+#: admin/view/templates/fme-qifw-view-page.php:107
+#: admin/view/templates/fme-qifw-manage-rule.php:334
+msgid "Select category."
+msgstr "Vyberte kategorii."
+
+#: admin/view/templates/fme-qifw-update-page.php:117
+msgid "Select Product"
+msgstr "Vyberte produkt"
+
+#: admin/view/templates/fme-qifw-view-page.php:75
+#: admin/view/templates/fme-qifw-manage-rule.php:300
+msgid "Select Product."
+msgstr "Vyberte produkt."
+
+#: admin/view/templates/fme-qifw-update-page.php:198
+msgid ""
+"Selecting at least one role will make the Quantity field to be "
+"visible/unvisible to that role.."
+msgstr ""
+"Pokud vyberete alespoň jednu roli, pole Množství bude pro tuto roli "
+"viditelné/neviditelné."
+
+#: admin/view/templates/fme-qifw-update-page.php:16
+msgid "SET Rules Priority."
+msgstr "SET Pravidla priority."
+
+#: admin/view/templates/fme-qifw-view-page.php:55
+#: admin/view/templates/fme-qifw-update-page.php:68
+#: admin/view/templates/fme-qifw-manage-rule.php:263
+msgid "Step:"
+msgstr "Krok:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:46
+msgid "Steps"
+msgstr "Kroky"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Succuss"
+msgstr "Succuss"
+
+#: admin/view/templates/fme-qifw-update-page.php:56
+msgid "The Maximum Quantity a customer can add to order for this product."
+msgstr ""
+"Maximální množství, které může zákazník přidat k objednávce tohoto produktu."
+
+#: admin/view/templates/fme-qifw-update-page.php:42
+msgid "The Minimum Quantity a customer has to order for this product."
+msgstr "Minimální množství, které musí zákazník pro tento produkt objednat."
+
+#: admin/view/templates/fme-qifw-update-page.php:69
+msgid "The step between allowed quantities."
+msgstr "Krok mezi povolenými množstvími."
+
+#: front/fme-quanity-increment-front.php:226
+#: front/fme-quantity-plus-minus.php:9
+msgid "This product is out of stock. It can be purchased by custom made order."
+msgstr "Tento produkt není skladem. Lze jej zakoupit na zakázku."
+
+#: admin/view/templates/fme-qifw-update-page.php:234
+#: admin/view/templates/fme-qifw-manage-rule.php:186
+msgid "Update Settings"
+msgstr "Aktualizovat nastavení"
+
+#: admin/view/templates/fme-qifw-view-page.php:135
+#: admin/view/templates/fme-qifw-manage-rule.php:364
+msgid "User Role."
+msgstr "Uživatelská role."
+
+#: admin/view/templates/fme-qifw-manage-rule.php:48
+msgid "User Roles"
+msgstr "Uživatelské role"

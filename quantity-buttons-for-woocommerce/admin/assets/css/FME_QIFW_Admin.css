@@ -1,0 +1,167 @@
+
+body {
+  background: #f0f0f1;
+  color: #3c434a;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+  min-width: 600px;
+}
+.woocommerce table.form-table .select2-container
+{
+  width: 200px !important;
+}
+.wc-wp-version-gte-53 .select2-container .select2-selection--multiple
+{
+ /*width: 200px !important;*/
+}
+.div_tip
+{
+  display: flex !important;
+}
+#wpwrap{
+  background: #f1f1f1;
+}
+.subsubsub { border-bottom: unset !important; }
+.subsubsub > li.active > a, .subsubsub > li.active > a:focus, .subsubsub > li.active > a:hover { border-width: 0; }
+/*.subsubsub > li > a { border:none;border-bottom:2px solid;border-right: 2px solid;}*/
+.subsubsub>li.active>a {
+  color: black !important; font-weight: 600;
+  border: none;
+}
+/*.subsubsub>li.active>a:hover {
+  background: #0073aa !important; color: white !important;
+  }*/
+  .subsubsub > li > a::after { background: #0073aa; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: unset !important; }
+  .subsubsub > li.active > a::after, .subsubsub > li:hover > a::after { transform: scale(1); }
+  .tab-nav > li > a::after { background: #5a4080 none repeat scroll 0% 0%; color: #fff; }
+  .tab-pane { padding: 15px 0; }
+  .tab-content{padding:20px 0;}
+  .card {background: #f0f0f1 none repeat scroll 0% 0%; max-width: 100% !important;  box-shadow: unset; border: unset; padding: unset; margin-top: unset; margin-bottom: 30px; }
+  .woocommerce-save-button{
+    display: none !important;
+  }
+  .control-label{
+    color: black !important;
+  }
+
+  #fme_row,#fme_qifw_Products,#fme_qifw_update_Products,#fme_qifw_update_category,#fme_qifw_category,#fme_qifw_user_role{
+    margin-top: 20px;
+  }
+  .fme_qifw_description {
+    /*font-size: 12px;*/
+    /*font-style: italic*/
+  }
+  .fme_QIFW_radio {
+    width: 14px !important;
+    height: 15px !important;
+    border-radius: inherit !important;
+    font-size: 18px!important;
+    vertical-align:inherit !important;
+  }
+  #fme_qifw_single_shop_Page{
+    margin-top: 2px;
+  }
+  #fme_qifw_success_update,#fme_qifw_success_general_settings,#fme_qifw_success_updated {
+    display: none;
+  }
+/*
+  .fme-table-hover > tbody > tr:hover {
+    background-color: lighten(cyan, 40%);
+  }
+*/
+  @media only screen and (min-width: 768px) {
+    #fme_datatable {
+      table-layout: fixed;
+      max-width: 100% !important;
+    }
+  }
+  thead {
+    background: #ddd;
+  }
+  .table td:nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @media only screen and (max-width: 767px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr,
+    tfoot tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50% !important;
+    }
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    .table td:nth-child(1) {
+      background: #ccc;
+      height: 100%;
+      top: 0;
+      left: 0;
+      font-weight: bold;
+    }
+  
+  /*
+  Label the data
+  */
+
+ /* td:nth-of-type(1):before {
+    content: "Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Position";
+  }
+  td:nth-of-type(3):before {
+    content: "Office";
+  }
+  td:nth-of-type(4):before {
+    content: "Age";
+  }
+  td:nth-of-type(5):before {
+    content: "Start date";
+  }
+  td:nth-of-type(6):before {
+    content: "Salary";
+  }*/
+  
+  .dataTables_length {
+    display: none;
+  }
+}
+#fme_btn {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    #fme_datatable_wrapper{
+      overflow-x: auto;
+      overflow-y: clip;
+      padding-left: 15px;
+    }
+}

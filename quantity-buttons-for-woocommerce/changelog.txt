@@ -1,0 +1,50 @@
+** FME Addons: Quantity Buttons for WooCommerce **
+2023-10-26 - version 1.1.4
+* Fixed unresponsive page error 
+* Fixed broken layout issue
+* Fixed issue where rules were not working for sub categories
+
+2023-09-28 - version 1.1.3
+* Minor bug fixes 
+
+2023-09-11 - version 1.1.2
+* Minor Bugs Fixed
+
+2023-07-17 - version 1.1.1
+* Made compatible with wordpress multisite
+
+2023-05-24 - version 1.1.0
+* Minor bug fixes
+
+2023-03-23 - version 1.0.9
+* Bug fixes and improvements
+
+2023-03-16 - version 1.0.8
+* Bug fixes and improvements
+* Fixed translation issues
+
+2023-01-27 - version 1.0.7
+* Minor bug fixes
+
+2023-01-17 - version 1.0.6
+* Resolved compatibility issues
+
+2022-09-30 - version 1.0.5
+* Minor bug fixes and improvement
+* Fixed theme compatibility issues
+
+2021-12-01 - version 1.0.4
+* Fixed compatibility issues
+
+2021-11-18 - version 1.0.3
+* Minor Fixes
+
+2021-09-07 - version 1.0.2
+* Changed admin settings design.
+* Fixed quantity buttons layout issues.
+
+2021-03-17 - version 1.0.1
+* update issue resolved
+
+2021-01-13 - version 1.0.0
+* Initial Release

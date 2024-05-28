@@ -1,0 +1,327 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quantity Buttons for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-24 13:05+0000\n"
+"PO-Revision-Date: 2023-03-16 09:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: FME_QIFW"
+
+#: admin/view/templates/fme-qifw-update-page.php:81
+msgid "A Readonly input field cannot be modified"
+msgstr "Поле введення лише для читання не можна змінити"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:49
+msgid "Action"
+msgstr "Дія"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:208
+msgid "Add New Rule"
+msgstr "Додати нове правило"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Add new rule"
+msgstr "Додайте нове правило"
+
+#: admin/view/templates/fme-qifw-view-page.php:67
+#: admin/view/templates/fme-qifw-update-page.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:289
+msgid "All Products:"
+msgstr "Всі продукти:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:38
+msgid "Button Color:"
+msgstr "Колір кнопки:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:47
+msgid "Button Font Color:"
+msgstr "Колір шрифту кнопки:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:57
+msgid "Button Font Size:"
+msgstr "Розмір шрифту кнопки:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:30
+msgid "Button Label:"
+msgstr "Мітка кнопки:"
+
+#: admin/view/templates/fme-qifw-view-page.php:69
+#: admin/view/templates/fme-qifw-update-page.php:102
+#: admin/view/templates/fme-qifw-manage-rule.php:291
+msgid "Categories"
+msgstr "Категорії"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:192
+#: admin/view/templates/fme-qifw-manage-rule.php:406
+msgid "Close"
+msgstr "Закрити"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:158
+msgid "Delete"
+msgstr "Видалити"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Delete Rule  Successfully.."
+msgstr "Правило видалено.."
+
+#: admin/view/templates/fme-qifw-view-page.php:32
+#: admin/view/templates/fme-qifw-update-page.php:32
+#: admin/view/templates/fme-qifw-manage-rule.php:231
+msgid "Disable "
+msgstr "Вимкнути"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:42
+msgid "Display On"
+msgstr "Дисплей увімкнено"
+
+#. Description of the plugin
+msgid ""
+"Display quantity increment buttons on shop, product, and cart page and set "
+"minimum / maximum order limits."
+msgstr ""
+"Відображати кнопки збільшення кількості на сторінці магазину, продукту та "
+"кошика та встановлювати мінімальні/максимальні обмеження на замовлення."
+
+#: admin/view/templates/fme-qifw-manage-rule.php:157
+msgid "Edit"
+msgstr "Редагувати"
+
+#: admin/view/templates/fme-qifw-view-page.php:31
+#: admin/view/templates/fme-qifw-update-page.php:31
+#: admin/view/templates/fme-qifw-manage-rule.php:230
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: admin/view/templates/fme-qifw-view-page.php:27
+#: admin/view/templates/fme-qifw-update-page.php:26
+#: admin/view/templates/fme-qifw-manage-rule.php:226
+msgid "Enable / Disable Rule:"
+msgstr "Увімкнути/вимкнути правило:"
+
+#: admin/view/templates/fme-qifw-update-page.php:27
+msgid "Enable / Disable Rules."
+msgstr "Увімкнути/вимкнути правила."
+
+#. Author of the plugin
+msgid "FME Addons"
+msgstr "Додатки FME"
+
+#: admin/fme-quanity-increment-admin.php:209
+#: admin/fme-quanity-increment-admin.php:210
+msgid "fme_quantity_increment"
+msgstr "fme_quantity_increment"
+
+#: admin/view/templates/fme-qifw-general-setting.php:24
+msgid "General rule"
+msgstr "Загальне правило"
+
+#: admin/view/fme-qifw-settings-page.php:8
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: admin/view/fme-qifw-settings-page.php:9
+msgid "Manage Rule"
+msgstr "Керувати правилом"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Manage rules"
+msgstr "Керуйте правилами"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:45
+msgid "Maximum Quantity"
+msgstr "Максимальна кількість"
+
+#: admin/view/templates/fme-qifw-view-page.php:47
+#: admin/view/templates/fme-qifw-update-page.php:55
+#: admin/view/templates/fme-qifw-manage-rule.php:251
+msgid "Maximum Quantity:"
+msgstr "Максимальна кількість:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:44
+msgid "Minimum Quantity"
+msgstr "Мінімальна кількість"
+
+#: admin/view/templates/fme-qifw-view-page.php:39
+#: admin/view/templates/fme-qifw-update-page.php:41
+#: admin/view/templates/fme-qifw-manage-rule.php:240
+msgid "Minimum Quantity:"
+msgstr "Мінімальна кількість:"
+
+#: admin/view/templates/fme-qifw-update-page.php:91
+msgid "Product / Category Restriction"
+msgstr "Обмеження продукту/категорії"
+
+#: admin/view/templates/fme-qifw-view-page.php:63
+#: admin/view/templates/fme-qifw-manage-rule.php:285
+msgid "Product / Category Restriction:"
+msgstr "Обмеження продукту/категорії:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:43
+msgid "Product/Category"
+msgstr "Категорія продукту"
+
+#: admin/view/templates/fme-qifw-view-page.php:68
+#: admin/view/templates/fme-qifw-update-page.php:101
+#: admin/view/templates/fme-qifw-manage-rule.php:290
+msgid "Products"
+msgstr "Продукти"
+
+#. Name of the plugin
+msgid "Quantity Buttons for WooCommerce"
+msgstr "Кнопки кількості для WooCommerce"
+
+#: front/fme-quanity-increment-front.php:322
+#: front/fme-quantity-plus-minus.php:112 front/fme-quantity-plus-minus.php:188
+#: front/fme-quantity-plus-minus.php:263
+msgid "Quantity can not add more than maximum value!"
+msgstr "Кількість не може перевищувати максимальне значення!"
+
+#: front/fme-quanity-increment-front.php:337
+#: front/fme-quantity-plus-minus.php:125 front/fme-quantity-plus-minus.php:201
+#: front/fme-quantity-plus-minus.php:276
+msgid "Quantity can not Less than minimum value!"
+msgstr "Кількість не може бути менше мінімального значення!"
+
+#: admin/view/templates/fme-qifw-general-setting.php:66
+msgid "Quantity Field Width:"
+msgstr "Ширина поля кількості:"
+
+#: admin/fme-quanity-increment-admin.php:196
+msgid "Quantity Increment"
+msgstr "Збільшення кількості"
+
+#: admin/view/templates/fme-qifw-update-page.php:94
+msgid ""
+"Quantity Increment can optionally visible/hidden only if the selected "
+"products are in cart/order."
+msgstr ""
+"Збільшення кількості може бути видимим/прихованим, лише якщо вибрані "
+"продукти є у кошику/замовленні."
+
+#: admin/view/templates/fme-qifw-general-setting.php:84
+msgid "Quantity Maximum Limit Error Message:"
+msgstr "Повідомлення про помилку максимального обмеження кількості:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:75
+msgid "Quantity Minimum Limit Error Message:"
+msgstr "Повідомлення про помилку мінімального ліміту кількості:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:47
+msgid "Readonly"
+msgstr "Лише для читання"
+
+#: admin/view/templates/fme-qifw-update-page.php:80
+#: admin/view/templates/fme-qifw-manage-rule.php:274
+msgid "Readonly:"
+msgstr "Лише для читання:"
+
+#: admin/view/templates/fme-qifw-view-page.php:19
+#: admin/view/templates/fme-qifw-update-page.php:15
+#: admin/view/templates/fme-qifw-manage-rule.php:215
+msgid "Rule Priority:"
+msgstr "Пріоритет правила:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:39
+msgid "Rules"
+msgstr "правила"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:41
+msgid "Rules Priority"
+msgstr "Пріоритет правил"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:40
+msgid "Rules Status"
+msgstr "Статус правил"
+
+#: admin/view/templates/fme-qifw-view-page.php:169
+#: admin/view/templates/fme-qifw-general-setting.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:393
+msgid "Save Settings"
+msgstr "Зберегти налаштування"
+
+#: admin/view/templates/fme-qifw-update-page.php:161
+msgid "Select category"
+msgstr "Виберіть категорію"
+
+#: admin/view/templates/fme-qifw-view-page.php:107
+#: admin/view/templates/fme-qifw-manage-rule.php:334
+msgid "Select category."
+msgstr "Виберіть категорію."
+
+#: admin/view/templates/fme-qifw-update-page.php:117
+msgid "Select Product"
+msgstr "Виберіть продукт"
+
+#: admin/view/templates/fme-qifw-view-page.php:75
+#: admin/view/templates/fme-qifw-manage-rule.php:300
+msgid "Select Product."
+msgstr "Виберіть продукт."
+
+#: admin/view/templates/fme-qifw-update-page.php:198
+msgid ""
+"Selecting at least one role will make the Quantity field to be "
+"visible/unvisible to that role.."
+msgstr ""
+"Вибір принаймні однієї ролі зробить поле «Кількість» видимим/невидимим для "
+"цієї ролі."
+
+#: admin/view/templates/fme-qifw-update-page.php:16
+msgid "SET Rules Priority."
+msgstr "ВСТАНОВИТИ пріоритет правил."
+
+#: admin/view/templates/fme-qifw-view-page.php:55
+#: admin/view/templates/fme-qifw-update-page.php:68
+#: admin/view/templates/fme-qifw-manage-rule.php:263
+msgid "Step:"
+msgstr "крок:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:46
+msgid "Steps"
+msgstr "Кроки"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Succuss"
+msgstr "Сукус"
+
+#: admin/view/templates/fme-qifw-update-page.php:56
+msgid "The Maximum Quantity a customer can add to order for this product."
+msgstr ""
+"Максимальна кількість, яку клієнт може додати до замовлення цього продукту."
+
+#: admin/view/templates/fme-qifw-update-page.php:42
+msgid "The Minimum Quantity a customer has to order for this product."
+msgstr "Мінімальна кількість, яку клієнт повинен замовити для цього продукту."
+
+#: admin/view/templates/fme-qifw-update-page.php:69
+msgid "The step between allowed quantities."
+msgstr "Крок між дозволеними кількостями."
+
+#: front/fme-quanity-increment-front.php:226
+#: front/fme-quantity-plus-minus.php:9
+msgid "This product is out of stock. It can be purchased by custom made order."
+msgstr ""
+"Цього товару немає в наявності. Його можна придбати під індивідуальне "
+"замовлення."
+
+#: admin/view/templates/fme-qifw-update-page.php:234
+#: admin/view/templates/fme-qifw-manage-rule.php:186
+msgid "Update Settings"
+msgstr "Оновити налаштування"
+
+#: admin/view/templates/fme-qifw-view-page.php:135
+#: admin/view/templates/fme-qifw-manage-rule.php:364
+msgid "User Role."
+msgstr "Роль користувача."
+
+#: admin/view/templates/fme-qifw-manage-rule.php:48
+msgid "User Roles"
+msgstr "Ролі користувачів"

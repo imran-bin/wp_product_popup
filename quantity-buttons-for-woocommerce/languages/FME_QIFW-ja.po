@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quantity Buttons for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-24 13:05+0000\n"
+"PO-Revision-Date: 2023-03-16 09:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: FME_QIFW"
+
+#: admin/view/templates/fme-qifw-update-page.php:81
+msgid "A Readonly input field cannot be modified"
+msgstr "読み取り専用の入力フィールドは変更できません"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:49
+msgid "Action"
+msgstr "アクション"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:208
+msgid "Add New Rule"
+msgstr "新しいルールを追加"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Add new rule"
+msgstr "新しいルールを追加"
+
+#: admin/view/templates/fme-qifw-view-page.php:67
+#: admin/view/templates/fme-qifw-update-page.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:289
+msgid "All Products:"
+msgstr "すべての製品："
+
+#: admin/view/templates/fme-qifw-general-setting.php:38
+msgid "Button Color:"
+msgstr "ボタンの色:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:47
+msgid "Button Font Color:"
+msgstr "ボタンのフォントの色:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:57
+msgid "Button Font Size:"
+msgstr "ボタンのフォント サイズ:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:30
+msgid "Button Label:"
+msgstr "ボタンのラベル:"
+
+#: admin/view/templates/fme-qifw-view-page.php:69
+#: admin/view/templates/fme-qifw-update-page.php:102
+#: admin/view/templates/fme-qifw-manage-rule.php:291
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:192
+#: admin/view/templates/fme-qifw-manage-rule.php:406
+msgid "Close"
+msgstr "近い"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:158
+msgid "Delete"
+msgstr "消去"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Delete Rule  Successfully.."
+msgstr "ルールを削除しました.."
+
+#: admin/view/templates/fme-qifw-view-page.php:32
+#: admin/view/templates/fme-qifw-update-page.php:32
+#: admin/view/templates/fme-qifw-manage-rule.php:231
+msgid "Disable "
+msgstr "無効にする"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:42
+msgid "Display On"
+msgstr "表示オン"
+
+#. Description of the plugin
+msgid ""
+"Display quantity increment buttons on shop, product, and cart page and set "
+"minimum / maximum order limits."
+msgstr "ショップ、商品、カートページに数量増加ボタンを表示し、最小/最大注文制限を設定します。"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:157
+msgid "Edit"
+msgstr "編集"
+
+#: admin/view/templates/fme-qifw-view-page.php:31
+#: admin/view/templates/fme-qifw-update-page.php:31
+#: admin/view/templates/fme-qifw-manage-rule.php:230
+msgid "Enable"
+msgstr "有効"
+
+#: admin/view/templates/fme-qifw-view-page.php:27
+#: admin/view/templates/fme-qifw-update-page.php:26
+#: admin/view/templates/fme-qifw-manage-rule.php:226
+msgid "Enable / Disable Rule:"
+msgstr "ルールを有効/無効にする:"
+
+#: admin/view/templates/fme-qifw-update-page.php:27
+msgid "Enable / Disable Rules."
+msgstr "ルールを有効/無効にします。"
+
+#. Author of the plugin
+msgid "FME Addons"
+msgstr "FME アドオン"
+
+#: admin/fme-quanity-increment-admin.php:209
+#: admin/fme-quanity-increment-admin.php:210
+msgid "fme_quantity_increment"
+msgstr "fme_quantity_increment"
+
+#: admin/view/templates/fme-qifw-general-setting.php:24
+msgid "General rule"
+msgstr "原則"
+
+#: admin/view/fme-qifw-settings-page.php:8
+msgid "General Settings"
+msgstr "一般設定"
+
+#: admin/view/fme-qifw-settings-page.php:9
+msgid "Manage Rule"
+msgstr "ルールの管理"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:33
+msgid "Manage rules"
+msgstr "ルールを管理する"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:45
+msgid "Maximum Quantity"
+msgstr "最大数量"
+
+#: admin/view/templates/fme-qifw-view-page.php:47
+#: admin/view/templates/fme-qifw-update-page.php:55
+#: admin/view/templates/fme-qifw-manage-rule.php:251
+msgid "Maximum Quantity:"
+msgstr "最大数量:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:44
+msgid "Minimum Quantity"
+msgstr "最小数量"
+
+#: admin/view/templates/fme-qifw-view-page.php:39
+#: admin/view/templates/fme-qifw-update-page.php:41
+#: admin/view/templates/fme-qifw-manage-rule.php:240
+msgid "Minimum Quantity:"
+msgstr "最小数量："
+
+#: admin/view/templates/fme-qifw-update-page.php:91
+msgid "Product / Category Restriction"
+msgstr "商品・カテゴリーの制限"
+
+#: admin/view/templates/fme-qifw-view-page.php:63
+#: admin/view/templates/fme-qifw-manage-rule.php:285
+msgid "Product / Category Restriction:"
+msgstr "商品・カテゴリー制限："
+
+#: admin/view/templates/fme-qifw-manage-rule.php:43
+msgid "Product/Category"
+msgstr "製品カテゴリ"
+
+#: admin/view/templates/fme-qifw-view-page.php:68
+#: admin/view/templates/fme-qifw-update-page.php:101
+#: admin/view/templates/fme-qifw-manage-rule.php:290
+msgid "Products"
+msgstr "製品"
+
+#. Name of the plugin
+msgid "Quantity Buttons for WooCommerce"
+msgstr "WooCommerce の数量ボタン"
+
+#: front/fme-quanity-increment-front.php:322
+#: front/fme-quantity-plus-minus.php:112 front/fme-quantity-plus-minus.php:188
+#: front/fme-quantity-plus-minus.php:263
+msgid "Quantity can not add more than maximum value!"
+msgstr "数量は最大値を超えることはできません!"
+
+#: front/fme-quanity-increment-front.php:337
+#: front/fme-quantity-plus-minus.php:125 front/fme-quantity-plus-minus.php:201
+#: front/fme-quantity-plus-minus.php:276
+msgid "Quantity can not Less than minimum value!"
+msgstr "数量を最小値未満にすることはできません!"
+
+#: admin/view/templates/fme-qifw-general-setting.php:66
+msgid "Quantity Field Width:"
+msgstr "数量フィールドの幅:"
+
+#: admin/fme-quanity-increment-admin.php:196
+msgid "Quantity Increment"
+msgstr "数量増分"
+
+#: admin/view/templates/fme-qifw-update-page.php:94
+msgid ""
+"Quantity Increment can optionally visible/hidden only if the selected "
+"products are in cart/order."
+msgstr "数量増分は、選択した製品がカート/注文にある場合にのみ、オプションで表示/非表示にすることができます。"
+
+#: admin/view/templates/fme-qifw-general-setting.php:84
+msgid "Quantity Maximum Limit Error Message:"
+msgstr "数量上限エラー メッセージ:"
+
+#: admin/view/templates/fme-qifw-general-setting.php:75
+msgid "Quantity Minimum Limit Error Message:"
+msgstr "数量の最小制限エラー メッセージ:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:47
+msgid "Readonly"
+msgstr "読み取り専用"
+
+#: admin/view/templates/fme-qifw-update-page.php:80
+#: admin/view/templates/fme-qifw-manage-rule.php:274
+msgid "Readonly:"
+msgstr "読み取り専用:"
+
+#: admin/view/templates/fme-qifw-view-page.php:19
+#: admin/view/templates/fme-qifw-update-page.php:15
+#: admin/view/templates/fme-qifw-manage-rule.php:215
+msgid "Rule Priority:"
+msgstr "ルールの優先度:"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:39
+msgid "Rules"
+msgstr "ルール"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:41
+msgid "Rules Priority"
+msgstr "ルールの優先度"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:40
+msgid "Rules Status"
+msgstr "ルールのステータス"
+
+#: admin/view/templates/fme-qifw-view-page.php:169
+#: admin/view/templates/fme-qifw-general-setting.php:100
+#: admin/view/templates/fme-qifw-manage-rule.php:393
+msgid "Save Settings"
+msgstr "設定を保存する"
+
+#: admin/view/templates/fme-qifw-update-page.php:161
+msgid "Select category"
+msgstr "カテゴリを選んでください"
+
+#: admin/view/templates/fme-qifw-view-page.php:107
+#: admin/view/templates/fme-qifw-manage-rule.php:334
+msgid "Select category."
+msgstr "カテゴリを選んでください。"
+
+#: admin/view/templates/fme-qifw-update-page.php:117
+msgid "Select Product"
+msgstr "製品を選択"
+
+#: admin/view/templates/fme-qifw-view-page.php:75
+#: admin/view/templates/fme-qifw-manage-rule.php:300
+msgid "Select Product."
+msgstr "製品を選択します。"
+
+#: admin/view/templates/fme-qifw-update-page.php:198
+msgid ""
+"Selecting at least one role will make the Quantity field to be "
+"visible/unvisible to that role.."
+msgstr "少なくとも 1 つの役割を選択すると、数量フィールドがその役割に対して表示/非表示になります。"
+
+#: admin/view/templates/fme-qifw-update-page.php:16
+msgid "SET Rules Priority."
+msgstr "ルールの優先順位を設定します。"
+
+#: admin/view/templates/fme-qifw-view-page.php:55
+#: admin/view/templates/fme-qifw-update-page.php:68
+#: admin/view/templates/fme-qifw-manage-rule.php:263
+msgid "Step:"
+msgstr "ステップ："
+
+#: admin/view/templates/fme-qifw-manage-rule.php:46
+msgid "Steps"
+msgstr "手順"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:172
+msgid "Succuss"
+msgstr "サッカス"
+
+#: admin/view/templates/fme-qifw-update-page.php:56
+msgid "The Maximum Quantity a customer can add to order for this product."
+msgstr "顧客がこの商品の注文に追加できる最大数量。"
+
+#: admin/view/templates/fme-qifw-update-page.php:42
+msgid "The Minimum Quantity a customer has to order for this product."
+msgstr "顧客がこの製品を注文する必要がある最小数量。"
+
+#: admin/view/templates/fme-qifw-update-page.php:69
+msgid "The step between allowed quantities."
+msgstr "許可された数量間のステップ。"
+
+#: front/fme-quanity-increment-front.php:226
+#: front/fme-quantity-plus-minus.php:9
+msgid "This product is out of stock. It can be purchased by custom made order."
+msgstr "この商品は在庫切れです。カスタムオーダーで購入できます。"
+
+#: admin/view/templates/fme-qifw-update-page.php:234
+#: admin/view/templates/fme-qifw-manage-rule.php:186
+msgid "Update Settings"
+msgstr "設定を更新"
+
+#: admin/view/templates/fme-qifw-view-page.php:135
+#: admin/view/templates/fme-qifw-manage-rule.php:364
+msgid "User Role."
+msgstr "ユーザーの役割。"
+
+#: admin/view/templates/fme-qifw-manage-rule.php:48
+msgid "User Roles"
+msgstr "ユーザーの役割"
