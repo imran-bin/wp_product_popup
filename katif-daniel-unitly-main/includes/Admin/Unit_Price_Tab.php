@@ -64,7 +64,8 @@ class Unit_Price_Tab
             'meter' => 'Meter',
             'liter' => 'Liter',
             'gram' => 'Gram', 
-            'kg' => 'Kilo Gram (KG)'
+            'kg' => 'Kilo Gram (KG)',
+            'custom'=>'custom '
         ); 
 
         woocommerce_wp_select( array(
@@ -73,7 +74,16 @@ class Unit_Price_Tab
             'options' =>  $options,
             'value'   => $product_unit,
         ) );
+        woocommerce_wp_text_input( array(
+            
+            'label' => 'Custom Unit (' . get_woocommerce_currency_symbol() . ')',
+            'class' => 'short wc_input_price',
+            'id' => 'product_custom_unit',
+            'type' => 'text',
+        ) );
+
         echo '</div>';
+        
 
         echo '<div class="options_group">';
         $price_per_unit = get_post_meta( $post->ID, 'price_per_unit', true );
@@ -84,6 +94,8 @@ class Unit_Price_Tab
             'id' => 'price_per_unit',
             'type' => 'text',
         ) );
+
+       
 
         woocommerce_wp_text_input( array(
             'label' => 'Min. Units to Purchase',

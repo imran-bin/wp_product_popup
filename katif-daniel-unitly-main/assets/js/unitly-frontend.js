@@ -83,6 +83,7 @@ jQuery(document).ready(function($) {
   // Function to update subtotal when quantity changes
   function updateSubtotal() {
       var quantity = parseInt($('#quantity').val());
+    
       var price = parseFloat($('#product-price').data('price'));
       var subtotal = quantity * price;
       $('#subtotal').text('Subtotal: $' + subtotal.toFixed(2));
@@ -156,7 +157,9 @@ jQuery(document).ready(function($) {
   $('body').on('click', '.add-to-cart', function() {
       var productId = $(this).data('post-id');
       var quantity = $('#quantity').val();
+     
       var subtotal = parseFloat($('#subtotal').text().replace('Subtotal: $', ''));
+      console.log(subtotal);
       
       // Update previous quantity and subtotal
       previousQuantity = quantity;
