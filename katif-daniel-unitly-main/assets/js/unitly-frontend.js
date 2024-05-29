@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
             success: function(response) {
                 console.log('imran',response.data);
                 // Display product details in a popup
-                showPopup(response.data.name, response.data.price, response.data.id, response.data.button_html ,response.data.unit_size,response.data.price_per_unit);
+                showPopup(response.data.name, response.data.price, response.data.id, response.data.button_html ,response.data.unit_size,response.data.price_per_unit,response.data.custom_unit);
             },
             error: function(xhr, status, error) {
                 // Handle errors
@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
     
     // Function to show popup with product details
    // Function to show popup with product details
-   function showPopup(productName, productPrice, productId, buttonHtml, unitSize, perUnit) {
+   function showPopup(productName, productPrice, productId, buttonHtml, unitSize, perUnit,customUnit) {
     // Clear previous popup content
     $('#popup').remove();
     
@@ -115,6 +115,8 @@ jQuery(document).ready(function($) {
     // if (typeof unitSize === 'undefined' || isNaN(unitSize) || unitSize <= 0) {
     //     unitSize = 500; // Default unit size to 500 grams if not provided or invalid
     // }
+    console.log(customUnit)
+   
     console.log(perUnit,'+/+',unitSize)
     // Calculate price per unit
     // var pricePerUnit = productPrice / unitSize;

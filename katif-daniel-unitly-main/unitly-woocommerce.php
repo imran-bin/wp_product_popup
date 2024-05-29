@@ -129,6 +129,7 @@ function get_product_details() {
         // Retrieve custom fields for price per unit and product unit
         $price_per_unit = get_post_meta($product_id, 'price_per_unit', true);
         $product_unit = get_post_meta($product_id, 'product_unit', true);
+        $custom_unit = get_post_meta($product_id,'product_custom_unit',true);
          
         
         // Return product details along with button HTML as JSON
@@ -136,7 +137,8 @@ function get_product_details() {
             'name' => $product->get_name(),
             'price' => $product->get_price(),
             'unit_size' => $product_unit, // Assuming product unit is stored in product_unit meta
-            'price_per_unit' => $price_per_unit, // Assuming price per unit is stored in price_per_unit meta
+            'price_per_unit' => $price_per_unit,
+            'custom_unit' => $ $custom_unit, // Assuming price per unit is stored in price_per_unit meta
             'button_html' => $button_html,
         ));
     } else {
