@@ -122,11 +122,14 @@ function get_product_details() {
     $product = wc_get_product($product_id);
     
     if ($product) {
-        // Return product details as JSON
+        // Generate the add to cart button
+        $button_html = '<button class="wc-add-to-cart" data-post-id="' . esc_attr($product_id) . '">Add to Cart</button>';
+        
+        // Return product details along with button HTML as JSON
         wp_send_json_success(array(
             'name' => $product->get_name(),
             'price' => $product->get_price(),
-            'id' => $product_id,
+            'button_html' => $button_html,
         ));
     } else {
         // Product not found
@@ -134,7 +137,7 @@ function get_product_details() {
     }
 }
 add_action('wp_ajax_get_product_details', 'get_product_details');
-add_action('wp_ajax_nopriv_get_product_details', 'get_product_details'); 
+add_action('wp_ajax_nopriv_get_product_details', 'get_product_details');  
 
 function add_to_cart() {
     check_ajax_referer('ajax-nonce', 'security');
@@ -171,7 +174,7 @@ function get_cart_count() {
     wp_die();
 }
 add_action('wp_ajax_get_cart_count', 'get_cart_count');
-add_action('wp_ajax_nopriv_get_cart_count', 'get_cart_count'); // For non-logged-in users
+add_action('wp_ajax_nopriv_get_cart_count', 'get_cart_count'); // For non-log
 
 
 /**
