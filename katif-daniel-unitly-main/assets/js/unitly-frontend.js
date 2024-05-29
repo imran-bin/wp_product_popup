@@ -94,9 +94,9 @@ jQuery(document).ready(function($) {
                 security: my_ajax_object.ajax_nonce
             },
             success: function(response) {
-                console.log(response);
+                console.log('imran',response.data);
                 // Display product details in a popup
-                showPopup(response.data.name, response.data.price, response.data.id, response.data.button_html);
+                showPopup(response.data.name, response.data.price, response.data.id, response.data.button_html ,response.data.unit_size,response.data.price_per_unit);
             },
             error: function(xhr, status, error) {
                 // Handle errors
@@ -107,14 +107,23 @@ jQuery(document).ready(function($) {
     
     // Function to show popup with product details
    // Function to show popup with product details
-function showPopup(productName, productPrice, productId, buttonHtml) {
+   function showPopup(productName, productPrice, productId, buttonHtml, unitSize, perUnit) {
     // Clear previous popup content
     $('#popup').remove();
+    
+    // Check if unitSize is provided and is a valid number
+    // if (typeof unitSize === 'undefined' || isNaN(unitSize) || unitSize <= 0) {
+    //     unitSize = 500; // Default unit size to 500 grams if not provided or invalid
+    // }
+    console.log(perUnit,'+/+',unitSize)
+    // Calculate price per unit
+    // var pricePerUnit = productPrice / unitSize;
     
     // Create new popup HTML with the product data
     var popupHtml = '<div id="popup" style="display: none;">' +
                         '<h2>' + productName + '</h2>' +
-                        '<p>Price: $' + productPrice + '</p>' +
+                        '<p>Price:   ' + productPrice + '</p>' +
+                        '<p>Price Per Unit:   ' + perUnit + ' /  ' + unitSize + ' </p>' +
                         buttonHtml + // Include button HTML
                         '<button class="close-popup">Close</button>' +
                     '</div>';
@@ -124,6 +133,7 @@ function showPopup(productName, productPrice, productId, buttonHtml) {
     // Show the pop-up
     $('#popup').addClass('active').show();
 }
+
 
     
     // Close the pop-up when the close button is clicked

@@ -112,10 +112,11 @@ function kickoff_unitly_woocommerce()
 // AJAX handler for fetching product details
 // AJAX handler for fetching product details
  
- 
 function get_product_details() {
+    // Check the AJAX nonce for security
     check_ajax_referer('ajax-nonce', 'security');
     
+    // Get the product ID from the AJAX request
     $product_id = isset($_POST['product_id']) ? $_POST['product_id'] : '';
     
     // Fetch product details based on $product_id
@@ -125,17 +126,28 @@ function get_product_details() {
         // Generate the add to cart button
         $button_html = '<button class="wc-add-to-cart" data-post-id="' . esc_attr($product_id) . '">Add to Cart</button>';
         
+        // Retrieve custom fields for price per unit and product unit
+        $price_per_unit = get_post_meta($product_id, 'price_per_unit', true);
+        $product_unit = get_post_meta($product_id, 'product_unit', true);
+         
+        
         // Return product details along with button HTML as JSON
         wp_send_json_success(array(
             'name' => $product->get_name(),
             'price' => $product->get_price(),
+            'unit_size' => $product_unit, // Assuming product unit is stored in product_unit meta
+            'price_per_unit' => $price_per_unit, // Assuming price per unit is stored in price_per_unit meta
             'button_html' => $button_html,
         ));
     } else {
-        // Product not found
+        // Product not found, send error response
         wp_send_json_error('Product not found');
     }
 }
+
+
+
+
 add_action('wp_ajax_get_product_details', 'get_product_details');
 add_action('wp_ajax_nopriv_get_product_details', 'get_product_details');  
 
